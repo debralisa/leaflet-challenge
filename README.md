@@ -19,6 +19,11 @@ The first task was to visualize an earthquake dataset and complete the following
 ## Part 2:  Gather and Plot More Data (Optional with no extra points earning)
 Did not complete.  I did add the satellite view overlay on the map, because I really liked the additional view option.  However, I did not complete the tectonic plates data plotting.
 
+###File Names/Folder Names
+
+#ReadMe.md, Leaflet-Part-1 folder containing index.html (html file), Static folder containing JS folder with: logic3.js (main javascript file with map/earthquake scripting), and CSS folder with style.css file. Leaflet-Part-2 folder which is empty in the event that I will at some point complete the tectonic plate bonus challenge.​
+
+
 ## Sources
 
 * [Leaflet documentation](http://leafletjs.com/)
