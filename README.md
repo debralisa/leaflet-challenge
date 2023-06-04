@@ -30,3 +30,5 @@ Did not complete.  I did add the satellite view overlay on the map, because I re
 * [MapBox API](https://www.mapbox.com/)
 * [USGS dataset](https://earthquake.usgs.gov)
 
+Gitpages live map:  (https://debralisa.github.io/leaflet-challenge/)
+
