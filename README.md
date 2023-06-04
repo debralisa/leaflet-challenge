@@ -21,7 +21,7 @@ Did not complete.  I did add the satellite view overlay on the map, because I re
 
 ###File Names/Folder Names
 
-#ReadMe.md, Leaflet-Part-1 folder containing index.html (html file), Static folder containing JS folder with: logic3.js (main javascript file with map/earthquake scripting), and CSS folder with style.css file. Leaflet-Part-2 folder which is empty in the event that I will at some point complete the tectonic plate bonus challenge.​
+#ReadMe.md, index.html (html file), Leaflet-Part-1 folder containing: Static folder containing JS folder with: logic3.js (main javascript file with map/earthquake scripting), and CSS folder with style.css file. Leaflet-Part-2 folder which is empty in the event that I will at some point complete the tectonic plate bonus challenge.​
 
 
 ## Sources
@@ -30,4 +30,3 @@ Did not complete.  I did add the satellite view overlay on the map, because I re
 * [MapBox API](https://www.mapbox.com/)
 * [USGS dataset](https://earthquake.usgs.gov)
 
-*Go to Earthquake Map:  (https://github.com/debralisa/leaflet-challenge/edit/main/Leaflet-Part-1/index.html)
