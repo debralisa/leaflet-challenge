@@ -29,3 +29,5 @@ Did not complete.  I did add the satellite view overlay on the map, because I re
 * [Leaflet documentation](http://leafletjs.com/)
 * [MapBox API](https://www.mapbox.com/)
 * [USGS dataset](https://earthquake.usgs.gov)
+
+*Go to Earthquake Map:  (https://github.com/debralisa/leaflet-challenge/edit/main/Leaflet-Part-1/index.html)
