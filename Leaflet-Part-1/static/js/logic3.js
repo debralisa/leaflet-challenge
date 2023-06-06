@@ -8,36 +8,32 @@ d3.json(queryURLMth).then(function(data){
     createFeatures(data.features);
   });    
 
-// function createFeatures(earthquakeData, platesData){
-
-    // // Give each feature a popup describing the place and time of the earthquakes
-    // function onEachFeature(feature, layer){
-    //     layer.on({
-    //        // When a user's mouse cursor touches a map feature, the mouseover event calls this function, which makes that feature's opacity change to 90% so that it stands out.
-    //         mouseover: function(event) {
-    //             layer = event.target;
-    //             layer.setStyle({
-    //                 fillOpacity: 0.9
-    //             });
-    //         },
-    //         // When the cursor no longer hovers over a map feature (that is, when the mouseout event occurs), the feature's opacity reverts back to 50%.
-    //         mouseout: function(event) {
-    //             layer = event.target;
-    //             layer.setStyle({
-    //                 fillOpacity: 0.5
-    //             });
-    //         },
-    //         // When a feature (mag) is clicked, it enlarges to fit the screen.
-    //         click: function(event) {
-    //             myMap.fitBounds(event.target.getBounds(mag));
-    //         }
-    //     });
-
 function createFeatures(earthquakeData){
 
-    // Create a popup popup describing the place and time of the earthquakes for each feature
+    // Create a popup describing the place and time of the earthquakes for each feature
     function onEachFeature(feature, layer){
         layer.bindPopup(`<h3>Where: ${feature.properties.place}</h3><hr><p>Time: ${new Date(feature.properties.time)}</p><hr><p>Magnitude: ${feature.properties.mag}</p><hr><p>Number of "Felt" Reports: ${feature.properties.felt}`);
+        layer.on({
+          // When a user's mouse cursor touches a map feature, the mouseover event calls this function, which makes that feature's opacity change to 90% so that it stands out.
+           mouseover: function(event) {
+               layer = event.target;
+               layer.setStyle({
+                   fillOpacity: .9
+               });
+           },
+           // When the cursor no longer hovers over a map feature (that is, when the mouseout event occurs), the feature's opacity reverts back to 50%.
+           mouseout: function(event) {
+               layer = event.target;
+               layer.setStyle({
+                   fillOpacity: .5
+               });
+           },
+           // When a feature (mag) is clicked, it enlarges to fit the screen.
+           click: function(event) {
+               this.openPopup();
+   // myMap.fitBounds(event.target.getBounds(mag));
+           }
+       });
     }
     
     // Create a GeoJSON layer containing the features array on the earthquakeData object
