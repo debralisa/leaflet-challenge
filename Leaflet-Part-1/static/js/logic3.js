@@ -1,7 +1,7 @@
 // Store the API endpoing as queryURLMth
 const queryURLMth = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson";
 
-// Perform a GET request to the query URL
+// Perform a GET request to the query URL.
 d3.json(queryURLMth).then(function(data){
 
   // Send data.features and data.features object to the createFeatures function.
@@ -12,7 +12,7 @@ function createFeatures(earthquakeData){
 
     // Create a popup describing the place and time of the earthquakes for each feature
     function onEachFeature(feature, layer){
-        layer.bindPopup(`<h3>Where: ${feature.properties.place}</h3><hr><p>Time: ${new Date(feature.properties.time)}</p><hr><p>Magnitude: ${feature.properties.mag}</p><hr><p>Number of "Felt" Reports: ${feature.properties.felt}`);
+        layer.bindPopup(`<h3>Where: ${feature.properties.place}</h3><hr><p>Time: ${new Date(feature.properties.time)}</p><hr><p>Magnitude: ${feature.properties.mag}</p><hr><p>Depth: ${feature.properties.depth}</p><hr><p>Number of "Felt" Reports: ${feature.properties.felt}`);
         layer.on({
           // When a user's mouse cursor touches a map feature, the mouseover event calls this function, which makes that feature's opacity change to 90% so that it stands out.
            mouseover: function(event) {
